@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_28 Update wifi infor success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c910d011-3771-4529-939e-1b8111ba18f3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8640d8e4-c60e-478f-9f42-8114d4fecb15</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>8640d8e4-c60e-478f-9f42-8114d4fecb15</id>
+      <masked>false</masked>
+      <name>newSessionEditWifi</name>
+   </variable>
+</TestCaseEntity>

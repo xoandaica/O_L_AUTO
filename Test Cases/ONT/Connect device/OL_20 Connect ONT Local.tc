@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_20 Connect ONT Local</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7460e729-eb3c-4833-8d5c-411cf15c1e92</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eca6681b-bcf8-4c45-add1-bc789ec0ffcc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>eca6681b-bcf8-4c45-add1-bc789ec0ffcc</id>
+      <masked>false</masked>
+      <name>newSessionConnect</name>
+   </variable>
+</TestCaseEntity>

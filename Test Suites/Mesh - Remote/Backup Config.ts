@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Backup Config</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>c166ca17-3a9a-474d-a821-f81d2ca9f410</testSuiteGuid>
+   <testCaseLink>
+      <guid>32d7bb84-2f5b-42d0-b791-32feea639199</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh Config/Connect device/OL_21 Verify connect Remote success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>249122a2-e694-46c9-9a17-04fa7120d097</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>54b16b6e-0aaa-4bdd-a5b8-e8151750e320</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5dadc32b-87a6-44ac-b8f2-e31e44792384</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh Config/Device control/Backup Config/OL_101 Access Backup Config screen success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7fd95071-9b13-416b-8126-86896aa8e018</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8f1e0559-3fb7-4cc8-a281-cfb2104c75e3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh Config/Device control/Backup Config/OL_103 Create Backup file success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>43e434a9-7109-428a-b43f-598fdd92b653</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

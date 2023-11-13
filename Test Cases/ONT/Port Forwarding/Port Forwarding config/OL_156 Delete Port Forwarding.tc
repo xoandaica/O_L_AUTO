@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra Xóa Port Forwarding</description>
+   <name>OL_156 Delete Port Forwarding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>79a89817-5289-446e-b40b-e021dd0c5797</testCaseGuid>
+</TestCaseEntity>

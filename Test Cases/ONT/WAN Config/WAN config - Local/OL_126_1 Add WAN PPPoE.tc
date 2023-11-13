@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra Tạo cấu hình WAN PPPoE thành công</description>
+   <name>OL_126_1 Add WAN PPPoE</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77ec7a5a-042a-4f11-a2c2-24246223dde1</testCaseGuid>
+</TestCaseEntity>

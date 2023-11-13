@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_204 Restore Config ONT success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d2cd087-2aee-46da-a684-57f98a6e281a</testCaseGuid>
+</TestCaseEntity>

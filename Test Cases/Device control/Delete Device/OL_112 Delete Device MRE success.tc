@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_112 Delete Device MRE success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed7e0938-b8f8-4afb-8fd2-5fdaff9cba55</testCaseGuid>
+</TestCaseEntity>

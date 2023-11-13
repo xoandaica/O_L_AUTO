@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_101 Access Backup Config screen success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1b037365-cce0-48b9-90a6-23dbe75068f5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7fd95071-9b13-416b-8126-86896aa8e018</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>7fd95071-9b13-416b-8126-86896aa8e018</id>
+      <masked>false</masked>
+      <name>newSessionBackup</name>
+   </variable>
+</TestCaseEntity>

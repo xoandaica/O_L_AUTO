@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra hiển thị màn hình danh sách WAN</description>
+   <name>OL_125 View WAN list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20de256a-1bbc-4c82-a64e-68eed5843646</testCaseGuid>
+</TestCaseEntity>

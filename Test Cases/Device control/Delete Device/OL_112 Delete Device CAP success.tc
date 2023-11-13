@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_112 Delete Device CAP success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>54cd7ed9-04ff-4b75-ac85-f6d9f7ae25c8</testCaseGuid>
+</TestCaseEntity>

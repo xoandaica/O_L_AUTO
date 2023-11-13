@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_172 Access to network diagnostics screen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b7a4bc1-1cf6-47fe-b763-a38eec56e010</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra Tạo cấu hình WAN Bridge thành công</description>
+   <name>OL_126_3 Add WAN Bridge</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9902afe-2b0c-4a79-aada-36e763bb521e</testCaseGuid>
+</TestCaseEntity>

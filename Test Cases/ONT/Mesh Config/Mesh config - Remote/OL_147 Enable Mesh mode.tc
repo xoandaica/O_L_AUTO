@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra enable mode mesh</description>
+   <name>OL_147 Enable Mesh mode</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e30784ff-d3ec-45ee-aeb5-20e1b2805dff</testCaseGuid>
+</TestCaseEntity>

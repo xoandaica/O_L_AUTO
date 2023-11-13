@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra di chuyển đến màn hình cấu hình LAN thành công</description>
+   <name>OL_133 Move to LAN config</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0de29f44-e008-4103-8023-b6853a0b50f3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8da7907d-35fe-4332-8a89-0caaa7ec93cc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>8da7907d-35fe-4332-8a89-0caaa7ec93cc</id>
+      <masked>false</masked>
+      <name>newSession</name>
+   </variable>
+</TestCaseEntity>

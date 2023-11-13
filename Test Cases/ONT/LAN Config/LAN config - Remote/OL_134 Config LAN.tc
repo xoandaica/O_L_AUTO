@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra sửa cấu hình LAN thành công</description>
+   <name>OL_134 Config LAN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>91f7f5a9-3318-4ea2-a32f-645de8cc1b3e</testCaseGuid>
+</TestCaseEntity>

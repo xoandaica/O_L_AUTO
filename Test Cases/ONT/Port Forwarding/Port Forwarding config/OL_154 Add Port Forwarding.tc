@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra Tạo cấu hình Port Forwarding thành công</description>
+   <name>OL_154 Add Port Forwarding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad3a32c4-c7a4-4e08-a315-4810f36aa71a</testCaseGuid>
+</TestCaseEntity>

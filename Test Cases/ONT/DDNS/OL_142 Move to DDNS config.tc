@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra di chuyển đến màn hình cấu hình DDNS</description>
+   <name>OL_142 Move to DDNS config</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bccc7ebb-b7d4-4655-a1c0-9dc914b47017</testCaseGuid>
+</TestCaseEntity>

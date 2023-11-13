@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra sửa wifi Guest 2.4G</description>
+   <name>OL_139 Config wifi Guest 2.4G</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>33c447ea-9841-4f55-ae87-51f7e8c6c678</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b4c23d61-b1ba-4a94-bb49-90f7d8dd4dbb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fda84c94-652c-4788-a871-7e0548abf3de</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b4c23d61-b1ba-4a94-bb49-90f7d8dd4dbb</id>
+      <masked>false</masked>
+      <name>earlyAssert</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fda84c94-652c-4788-a871-7e0548abf3de</id>
+      <masked>false</masked>
+      <name>ssidNameAssert</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_21 Connect ONT Remote</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77226da5-a9f4-4929-9918-6547b3b03ea8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>66767007-bcde-4a13-9851-5fd9bd04dbb7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>66767007-bcde-4a13-9851-5fd9bd04dbb7</id>
+      <masked>false</masked>
+      <name>newSessionConnect</name>
+   </variable>
+</TestCaseEntity>

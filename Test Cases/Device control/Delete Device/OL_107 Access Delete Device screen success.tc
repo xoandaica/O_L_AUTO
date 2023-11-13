@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_107 Access Delete Device screen success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c36564f0-a3c4-4b96-b796-f8e25f980af7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>02c42e5f-e60e-4b53-b2c4-738b24a548f7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>02c42e5f-e60e-4b53-b2c4-738b24a548f7</id>
+      <masked>false</masked>
+      <name>newSessionDelete</name>
+   </variable>
+</TestCaseEntity>

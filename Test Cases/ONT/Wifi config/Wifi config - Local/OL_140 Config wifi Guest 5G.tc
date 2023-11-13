@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra sửa wifi Guest 5G</description>
+   <name>OL_140 Config wifi Guest 5G</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>53371138-4f2b-4dfb-807c-86f5be9af11b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a2877588-4074-4189-92a7-e25893bb8e2a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ad090e6a-a2d9-4a32-ad6f-731cf3762a40</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a2877588-4074-4189-92a7-e25893bb8e2a</id>
+      <masked>false</masked>
+      <name>earlyAssert</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ad090e6a-a2d9-4a32-ad6f-731cf3762a40</id>
+      <masked>false</masked>
+      <name>ssidNameAssert</name>
+   </variable>
+</TestCaseEntity>

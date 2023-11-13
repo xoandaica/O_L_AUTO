@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_103 Create Backup file success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9e8e9d6-7b23-4443-bd86-355fbf973bde</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>43e434a9-7109-428a-b43f-598fdd92b653</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>43e434a9-7109-428a-b43f-598fdd92b653</id>
+      <masked>false</masked>
+      <name>newSessionBkCreate</name>
+   </variable>
+</TestCaseEntity>

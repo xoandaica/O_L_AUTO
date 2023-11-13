@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_23 View wifi info success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aaa4d6c7-96aa-42a3-be65-f985948ebbe5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d50f1e71-acb5-45be-a8f8-f4d6f4e71187</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>d50f1e71-acb5-45be-a8f8-f4d6f4e71187</id>
+      <masked>false</masked>
+      <name>newSessionViewWifi</name>
+   </variable>
+</TestCaseEntity>

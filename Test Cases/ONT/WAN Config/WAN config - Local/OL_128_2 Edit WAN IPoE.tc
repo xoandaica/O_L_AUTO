@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra Sửa WAN khác 0 thành công: ipoe</description>
+   <name>OL_128_2 Edit WAN IPoE</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb6b5b5f-8cfb-47fa-8e21-90130c92e616</testCaseGuid>
+</TestCaseEntity>

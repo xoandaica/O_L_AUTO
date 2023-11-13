@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_24 View client device info success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8ecd6934-7e1d-4eed-88f6-387b2d303ca2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>90daac2a-d3c7-4f76-b566-5a81e80cfb5b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>90daac2a-d3c7-4f76-b566-5a81e80cfb5b</id>
+      <masked>false</masked>
+      <name>newSession</name>
+   </variable>
+</TestCaseEntity>

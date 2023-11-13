@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_96 Access Restore screen success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aca6a511-7dd7-4217-b00a-d2905f5307ee</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f0c9299e-b703-43a3-bea9-3c2dcae0cfba</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>f0c9299e-b703-43a3-bea9-3c2dcae0cfba</id>
+      <masked>false</masked>
+      <name>newSessionRestore</name>
+   </variable>
+</TestCaseEntity>

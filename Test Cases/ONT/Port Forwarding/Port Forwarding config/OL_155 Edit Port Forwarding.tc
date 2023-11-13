@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra Sửa cấu hình Port Forwarding thành công</description>
+   <name>OL_155 Edit Port Forwarding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe6f3b90-4263-4d44-a2a6-f5a48092337a</testCaseGuid>
+</TestCaseEntity>

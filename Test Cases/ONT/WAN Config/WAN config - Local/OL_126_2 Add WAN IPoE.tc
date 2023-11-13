@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra Tạo cấu hình WAN IPoE thành công</description>
+   <name>OL_126_2 Add WAN IPoE</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>64e7cce0-d115-44e9-a6d6-734884b4f88d</testCaseGuid>
+</TestCaseEntity>

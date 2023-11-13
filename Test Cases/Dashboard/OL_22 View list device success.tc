@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_22 View list device success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2fe771ea-0c75-48d0-9f6e-c5328de58108</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>71be9763-d58e-4673-a26b-5d27df0ecd51</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>71be9763-d58e-4673-a26b-5d27df0ecd51</id>
+      <masked>false</masked>
+      <name>newSession</name>
+   </variable>
+</TestCaseEntity>

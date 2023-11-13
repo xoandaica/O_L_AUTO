@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_51 Delete DDNS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65501762-0b0a-4e32-b968-b2e415775c42</testCaseGuid>
+</TestCaseEntity>

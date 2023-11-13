@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Kiểm tra hoạt động button Port Forwarding màn hình danh sách WAN</description>
+   <name>OL_152 Check button Port Forwarding - Local</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e2e288a6-b810-40c8-905b-cfe070bf199e</testCaseGuid>
+</TestCaseEntity>
