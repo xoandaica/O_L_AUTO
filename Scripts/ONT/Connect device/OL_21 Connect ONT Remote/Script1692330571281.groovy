@@ -21,10 +21,10 @@ import org.openqa.selenium.Keys as Keys
 import one.telco.Commonv 
 
 
-if("$newSessionConnect" == 'true') {
+//if("$newSessionConnect" == 'true') {
 	Mobile.startApplication(GlobalVariable.apk, false)
 	Commonv.checkLogin()
-} 
+//} 
 
 
 TestObject serialInputObj = findTestObject('Object Repository/Mesh/Connect device/Connected remote/tbx_input_serialNum') 
