@@ -22,7 +22,12 @@ import org.openqa.selenium.Keys as Keys
 import base.EzAction
 
 
-EzAction ez = new EzAction()
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), ['newSessionConnect': true], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Test Cases/ONT/LAN Config/LAN config - Local/OL_133 Move to LAN config'), null, FailureHandling.STOP_ON_FAILURE)
+
+
+EzAction ez = new EzAction() 
+
 // Check data
 MobileElement IP_El = ez.findContains('IP Address', 1)
 def ip = IP_El.getText()
@@ -50,4 +55,6 @@ ez.tapElementByText('Lưu')
 // Verify msg 
 Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Network config/Message/msg_configSuccess_local'), 120)
 ez.tapElementByText('Xác nhận')
-Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Connect device/input_serialNumber'), 30)
+Mobile.verifyElementExist(findTestObject('Object Repository/Login/img_setting'), 30) 
+
+Mobile.delay(60)

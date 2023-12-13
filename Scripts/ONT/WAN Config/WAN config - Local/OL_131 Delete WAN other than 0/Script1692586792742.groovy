@@ -26,9 +26,11 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement
 
 
-EzAction ez = new EzAction()
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), ['newSessionConnect': true], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Local/OL_125 View WAN list'), null, FailureHandling.STOP_ON_FAILURE)
 
 
+EzAction ez = new EzAction() 
 // Check số lượng WAN
 TestObject wanList = findTestObject('Object Repository/ONT/Network config/WAN config/wanList')  
 int wanNumber = (Mobile.getAttribute(wanList, 'contentDescription', 5)).substring(16, 17) as int 
@@ -47,6 +49,9 @@ if(wanNumber == 1) {
 //Chọn Wan cuối và xoá
 List<MobileElement> wans = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
 wans.last().click()
+if(Mobile.verifyElementNotExist(ez.createTestObjectFromText('Chi tiết WAN'), 5, FailureHandling.OPTIONAL)) {
+	wans.last().click()
+}
 ez.tapElementByText('Xóa WAN')
 ez.tapElementByText('Đồng ý') 
 
@@ -54,8 +59,9 @@ ez.tapElementByText('Đồng ý')
 // Verify msg 
 Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Network config/Message/msg_deleteSuccess_local'), 120)
 ez.tapElementByText('Xác nhận')
-Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Connect device/input_serialNumber'), 10)
+Mobile.verifyElementExist(findTestObject('Object Repository/Login/img_setting'), 30) 
 
+Mobile.delay(60)
 
 
 

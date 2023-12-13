@@ -23,7 +23,11 @@ import one.telco.Randomv
 import org.openqa.selenium.Keys as Keys
 
 
-EzAction ez = new EzAction()
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), ['newSessionConnect': true], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Wifi config/OL_136 Move to Wifi config'), null, FailureHandling.STOP_ON_FAILURE)
+
+
+EzAction ez = new EzAction() 
 // Click WiFi Guest 2.4G index 1
 TestObject wifiGuest = findTestObject('Object Repository/ONT/Network config/Wifi config/wifiGuest_index1')
 Mobile.tap(wifiGuest, 0)
@@ -50,12 +54,12 @@ String newName = 'testGuest2.4G' + Randomv.getHexStringFromTimestamp().substring
 Mobile.tap(findTestObject('Object Repository/ONT/Network config/Wifi config/ssidName'), 0)
 Mobile.setText(findTestObject('Object Repository/ONT/Network config/Wifi config/ssidName'), newName, 5)
 ez.tapElementByText('Lưu')
+Mobile.delay(10)
 ez.findContains('Lưu thành công', 0) 
-ez.tapElementByText('Xác nhận')
+ez.tapElementByText('Tiếp tục')
 
 
 // Call lại case config để kiểm tra giá trị SSID name đã thay đổi chưa
-Mobile.delay(5) 
-Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), [newSessionConnect: true], FailureHandling.STOP_ON_FAILURE)
-Mobile.callTestCase(findTestCase('Test Cases/ONT/Wifi config/OL_136 Move to Wifi config'), null, FailureHandling.STOP_ON_FAILURE)
-Mobile.callTestCase(findTestCase('Test Cases/ONT/Wifi config/Wifi config - Remote/OL_139 Config wifi Guest 2.4G'), [('earlyAssert') : 'true', ('ssidNameAssert') : newName], FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Login/img_setting'), 30) 
+Mobile.delay(60) 
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Wifi config/Wifi config - Local/OL_139 Config wifi Guest 2.4G'), [('earlyAssert') : 'true', ('ssidNameAssert') : newName], FailureHandling.STOP_ON_FAILURE)

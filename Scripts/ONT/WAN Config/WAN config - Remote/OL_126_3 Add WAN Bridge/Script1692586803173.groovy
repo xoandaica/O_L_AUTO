@@ -21,10 +21,9 @@ import org.openqa.selenium.Keys as Keys
 import base.EzAction 
 import org.openqa.selenium.By
 
+Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Remote/OL_125 View WAN list'), [:], FailureHandling.STOP_ON_FAILURE)
 
 EzAction ez = new EzAction()
-
-
 // Check số lượng WAN
 TestObject wanList = findTestObject('Object Repository/ONT/Network config/WAN config/wanList')  
 int wanNumber = (Mobile.getAttribute(wanList, 'contentDescription', 5)).substring(16, 17) as int 
@@ -39,9 +38,9 @@ if(wanNumber == 8) {
 // Set data & Save
 ez.tapFriendByText('Danh sách WAN', 1)
 Mobile.delay(5) 
-Mobile.tap(findTestObject('Object Repository/ONT/Network config/WAN config/combobox_wanType'), 0)  
+ez.tapFriendByText('WAN Index', 2)
 ez.tapElementByText('Bridge') 
-ez.setTextFriendByText('WAN Index', '3000', 4)
+ez.setTextFriendByText('WAN Index', '30' + wanNumber, 4)
 ez.setTextFriendByText('WAN Index', '3', 6) 
 ez.tapElementByText('Lưu')
 
@@ -50,3 +49,7 @@ ez.tapElementByText('Lưu')
 Mobile.verifyElementExist(ez.createTestObjectFromText('Lưu thành công!'), 120)  
 ez.tapElementByText('Xác nhận')
 Mobile.waitForElementPresent(ez.createTestObjectFromText('Danh sách WAN'), 30)
+
+
+// Load lại data
+Mobile.delay(60) 

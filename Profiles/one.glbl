@@ -6,12 +6,17 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'tienpx'</initValue>
+      <initValue>'APK/onelink-2.3.1-stagRelease-06.10.13.38.apk'</initValue>
+      <name>apk</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'hienlt'</initValue>
       <name>username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'zxc!23'</initValue>
+      <initValue>'Hien@123'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -35,11 +40,6 @@
       <name>sql_driver</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>GW020-H</description>
-      <initValue>'VNPT03bc7661'</initValue>
-      <name>ONTSerial</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description>Giá trị 1: Local, Giá trị 0: Remote</description>
       <initValue>true</initValue>
       <name>connectType</name>
@@ -50,28 +50,73 @@
       <name>passGUI</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'APK/onelink-2.3.1-stagRelease-05.10.11.58.apk'</initValue>
-      <name>apk</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>240-H</description>
-      <initValue>'VNPT03477ba1'</initValue>
-      <name>Serial2</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>12STv2</description>
-      <initValue>'12809091643F4E2'</initValue>
+      <description>Model EW12STv1</description>
+      <initValue>'1292922130B444C'</initValue>
       <name>meshSerial</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'43f4e2'</initValue>
-      <name>wifi_name</name>
+      <initValue>'EW_0b444c'</initValue>
+      <name>wifiName_Mesh</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'12345678'</initValue>
-      <name>wifi_pws</name>
+      <name>wifiPass_Mesh</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Model GW040-H</description>
+      <initValue>'VNPT03bc7661'</initValue>
+      <name>ONTSerial</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'GW020-H'</initValue>
+      <name>ONTModel</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'tclinux.bin.signed.G020E2VN00T005_230905_185608'</initValue>
+      <name>ONTFirmware</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'7661_test'</initValue>
+      <name>wifiName_ONT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'12345678'</initValue>
+      <name>wifiPass_ONT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>có giá trị 'remote' hoặc 'local'</description>
+      <initValue>'local'</initValue>
+      <name>connectMode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'EW12ST'</initValue>
+      <name>modelName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'tclinux.bin.signed.G040DEVN00T006_231005_163621'</initValue>
+      <name>ONTFirmware</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>fileBkup_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Tên file firmware remote của 12STv1</description>
+      <initValue>'EW12_EW12ST000T0005'</initValue>
+      <name>firmwareMesh_remote</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>FW 12STv1 local</description>
+      <initValue>'EW12_EW12ST000T0005.tar.gz'</initValue>
+      <name>firmwareMesh_local</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

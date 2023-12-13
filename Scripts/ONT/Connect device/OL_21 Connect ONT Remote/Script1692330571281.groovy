@@ -14,24 +14,26 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
+import base.EzAction
 import internal.GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import one.telco.Commonv 
 
 
 if("$newSessionConnect" == 'true') {
-	Mobile.startApplication(GlobalVariable.apk, true)
+	Mobile.startApplication(GlobalVariable.apk, false)
 	Commonv.checkLogin()
 } 
 
 
-TestObject serialInputObj = findTestObject('Object Repository/Home/EditText_search_serial')
-TestObject searchBtn = findTestObject('Object Repository/Home/ImageView_search_btn')
+TestObject serialInputObj = findTestObject('Object Repository/Mesh/Connect device/Connected remote/tbx_input_serialNum') 
+TestObject searchBtn = findTestObject('Object Repository/Mesh/Connect device/Connected remote/btn_search_serialNum')
 
 
 // Tìm kiếm thiết bị
 Mobile.tap(serialInputObj, 0)
-Mobile.setText(serialInputObj, GlobalVariable.Serial2, 0)
+Mobile.setText(serialInputObj, GlobalVariable.ONTSerial, 0)
 Mobile.tap(searchBtn, 0)
 
 
@@ -42,10 +44,14 @@ Mobile.tap(findTestObject('Object Repository/Home/Panel_device'), 0)
 
 //Skip tutorial
 TestObject skipBtn = findTestObject('Object Repository/ONT/Connect device/btn_Skip')
-if(Mobile.verifyElementExist(skipBtn, 10, FailureHandling.OPTIONAL)) {
+if(Mobile.verifyElementExist(skipBtn, 5, FailureHandling.OPTIONAL)) {
 	Mobile.tap(skipBtn, 0)
 }
 
 
 // Kiểm tra đã vào được màn Dashboard 
-Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Dashboard/wifi2.4G'), 30) 
+EzAction ez = new EzAction()
+String model = GlobalVariable.ONTModel
+ez.find(model, 0)
+//Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Dashboard/wifi2.4G'), 30) 
+return GlobalVariable.connectMode = 'remote'

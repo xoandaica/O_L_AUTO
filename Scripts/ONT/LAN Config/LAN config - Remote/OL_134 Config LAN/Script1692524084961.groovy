@@ -16,10 +16,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 import io.appium.java_client.MobileElement
+import one.telco.Commonv
 
 import org.openqa.selenium.Keys as Keys
 import base.EzAction
 
+
+Mobile.startApplication(GlobalVariable.apk, false)
+Commonv.checkLogin()
+
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_21 Connect ONT Remote'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Test Cases/ONT/LAN Config/LAN config - Remote/OL_133 Move to LAN config'), [:], FailureHandling.STOP_ON_FAILURE)
 
 EzAction ez = new EzAction()
 // Check data
@@ -50,3 +57,7 @@ ez.tapElementByText('Lưu')
 Mobile.verifyElementExist(ez.createTestObjectFromText('Lưu thành công!'), 120) 
 ez.tapElementByText('Xác nhận')
 Mobile.waitForElementPresent(ez.createTestObjectFromText('Cấu hình Mạng'), 30)
+
+
+// Back về Dashboard
+Mobile.delay(60) 

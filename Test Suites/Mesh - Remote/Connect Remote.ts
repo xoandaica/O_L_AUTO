@@ -15,7 +15,7 @@
       <guid>d82b5972-144b-472a-91d4-3d3a1814ab82</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Mesh Config/Connect device/OL_21 Verify connect Remote success</testCaseId>
+      <testCaseId>Test Cases/Mesh/Connect device/OL_21 Verify connect Remote success</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -34,7 +34,7 @@
       <guid>567ba0f4-d858-4ed1-9f96-da5db84e1a65</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Mesh Config/Dashboard/OL_22 View list device success</testCaseId>
+      <testCaseId>Test Cases/Mesh/Dashboard/Local/OL_22 View list device success</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -47,13 +47,7 @@
       <guid>faa35863-d56b-4af9-9982-711e9fcfa13d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Mesh Config/Dashboard/OL_23 View wifi info success</testCaseId>
+      <testCaseId>Test Cases/Mesh/Dashboard/Local/OL_23 View wifi info success</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>d50f1e71-acb5-45be-a8f8-f4d6f4e71187</variableId>
-      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

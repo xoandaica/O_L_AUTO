@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_42 Config wifi SSID main - Remote</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e10b71d4-db75-456b-9519-5604001827fd</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>175aa913-d284-49cb-a7ff-446a622a4158</id>
+      <masked>false</masked>
+      <name>earlyAssert</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8615f87b-9029-407a-93a6-78343cf06a9e</id>
+      <masked>false</masked>
+      <name>ssidNameAssert</name>
+   </variable>
+</TestCaseEntity>

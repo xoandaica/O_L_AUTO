@@ -224,8 +224,8 @@ class EzAction {
 
 	//vuốt
 	def swipeRightToLeft(WebElement element, int distancePercentage) {
-		def width = element.size().width
-		def height = element.size().height
+		def width = element.size.width
+		def height = element.size.height
 
 		int startOffsetX = 100 - distancePercentage
 		int endOffsetX = 0
@@ -237,7 +237,7 @@ class EzAction {
 		println "swipeRightToLeft: startX - endX => $startX - $endX"
 
 		def actions = new Actions(driver)
-		actions.moveToElement(element, startX, offsetY)
+		actions.moveToElement(element, startX, 0)
 				.clickAndHold()
 				.moveByOffset(endX - startX, 0)
 				.release()

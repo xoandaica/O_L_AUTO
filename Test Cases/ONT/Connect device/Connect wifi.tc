@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>4e4340ec-aee4-408e-9fd3-09a95e159485</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>850d9271-fcf5-462a-96ef-a1f3445a7673</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3f59ccea-7df0-418c-90aa-f47d5ee031eb</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.wifiName_ONT</defaultValue>
+      <description></description>
+      <id>850d9271-fcf5-462a-96ef-a1f3445a7673</id>
+      <masked>false</masked>
+      <name>wifi_nameLocal</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.wifiPass_ONT</defaultValue>
+      <description></description>
+      <id>3f59ccea-7df0-418c-90aa-f47d5ee031eb</id>
+      <masked>false</masked>
+      <name>wifi_passLocal</name>
+   </variable>
 </TestCaseEntity>

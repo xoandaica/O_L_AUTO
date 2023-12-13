@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_20 Verify connect Local success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7bbf6f1d-7eee-493c-b264-0289695a0561</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>516ecea5-1c48-4b9e-b198-0d11469f2198</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>516ecea5-1c48-4b9e-b198-0d11469f2198</id>
+      <masked>false</masked>
+      <name>newSessionConnect</name>
+   </variable>
+</TestCaseEntity>

@@ -34,8 +34,8 @@ MobileElement modeMesh = ez.find('Enable', 1)
 //Kiểm tra nút đang Disable 
 assert EzImage.checkElementByColor(modeMesh, EzImage.Colorv.toggleDisable, EzImage.Colorv.toggleEnable) 
  
-// Click ON Mesh mode và verify msg
-Mobile.tap(findTestObject('Object Repository/ONT/Network config/swt_modeMesh'), 0) 
+// Click ON Mesh mode và verify msg 
+ez.tapFriendByText('Enable', 1)
 Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Network config/Message/msg_enableMeshMode_local'), 120)
 ez.tapElementByText('Xác nhận')
 Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Connect device/input_serialNumber'), 30)

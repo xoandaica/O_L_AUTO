@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_66 Move to Channel Bandwidth</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>effb6587-f0a2-4c69-af20-b652792e1de0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>555aa78c-bb23-4c74-bb0a-00cd545f25d2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>GlobalVariable.connectMode</defaultValue>
+      <description></description>
+      <id>555aa78c-bb23-4c74-bb0a-00cd545f25d2</id>
+      <masked>false</masked>
+      <name>connectMode</name>
+   </variable>
+</TestCaseEntity>

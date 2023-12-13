@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_217 Delete Device ONT success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>336e60f5-27b3-4453-ad7a-d1456e817911</testCaseGuid>
+</TestCaseEntity>

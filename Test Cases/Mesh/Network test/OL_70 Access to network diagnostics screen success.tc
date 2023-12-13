@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_70 Access to network diagnostics screen success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3d370e6f-27d1-40f3-b047-5fcb6ec8c6a0</testCaseGuid>
+</TestCaseEntity>

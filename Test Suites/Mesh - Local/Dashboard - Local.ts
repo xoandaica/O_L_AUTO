@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Dashboard - Local</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>ad33845e-f63a-41c8-be8a-51f023d67c4f</testSuiteGuid>
+   <testCaseLink>
+      <guid>b7881794-c207-4892-850d-b7f78a320c4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Connect device/Connect wifi</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2f101926-5c8a-4cdf-9938-dc42acf88c5f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae6b556b-d479-4bd6-b98d-11a87885c36a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5c3567df-f174-46f9-95f7-38b192fea1df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Connect device/OL_20 Verify connect Local success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>516ecea5-1c48-4b9e-b198-0d11469f2198</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c2b8ee5f-4acb-4732-8480-4bb585d14aa2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Dashboard/Local/OL_22 View list device success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>71be9763-d58e-4673-a26b-5d27df0ecd51</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c884189b-5d2d-4111-8b2b-0227cdf14027</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Dashboard/Local/OL_23 View wifi info success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>20e54155-77b9-4e73-8425-e73950e75c13</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Dashboard/Local/OL_24 View client device info success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>90daac2a-d3c7-4f76-b566-5a81e80cfb5b</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a198fcb2-28ac-4d05-a428-bf6831eea75f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Dashboard/Local/OL_28 Update wifi infor success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8640d8e4-c60e-478f-9f42-8114d4fecb15</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

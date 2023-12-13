@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Wifi 5G</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d47d5a1d-ced9-4de0-a038-cfa01f5162b3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d0fe402c-ec09-4d7e-b6bf-ccf5f86a2ee2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c7b12f4e-9fcd-4a02-8100-30b5df98deaf</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d0fe402c-ec09-4d7e-b6bf-ccf5f86a2ee2</id>
+      <masked>false</masked>
+      <name>earlyAssert</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c7b12f4e-9fcd-4a02-8100-30b5df98deaf</id>
+      <masked>false</masked>
+      <name>ssidNameAssert</name>
+   </variable>
+</TestCaseEntity>

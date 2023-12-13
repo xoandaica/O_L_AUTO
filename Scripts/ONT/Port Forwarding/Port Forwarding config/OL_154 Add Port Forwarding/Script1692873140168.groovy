@@ -30,7 +30,10 @@ ez.tapElementByText('TCP')
 ez.setTextFriendByText('Start Remote Port', '1000', 1)
 ez.setTextFriendByText('End Remote Port', '2000', 1)
 ez.setTextFriendByText('Start Local Port', '3000', 1)
-Mobile.swipe(380, 2200, 380, 220)
+int height95 = (Mobile.getDeviceHeight())*95/100
+int height5 = (Mobile.getDeviceHeight())*5/100
+int width50 = (Mobile.getDeviceWidth())*50/100
+Mobile.swipe(width50, height95, width50, height5)
 ez.setTextFriendByText('End Local Port', '4000', 1)
 ez.tapElementByText('Lưu')
 

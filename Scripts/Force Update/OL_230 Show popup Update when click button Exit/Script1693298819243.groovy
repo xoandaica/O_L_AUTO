@@ -29,7 +29,7 @@ Mobile.delay(5)
 
 Mobile.startApplication(GlobalVariable.apk, false)
 
-Mobile.delay(15)
+Mobile.delay(10)
 
 Mobile.verifyElementExist(findTestObject('Object Repository/Force Update/Tick/popup'), 30, FailureHandling.STOP_ON_FAILURE)
 

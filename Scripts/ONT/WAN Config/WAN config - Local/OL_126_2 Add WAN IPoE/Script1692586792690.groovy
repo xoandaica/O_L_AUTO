@@ -24,9 +24,11 @@ import base.EzAction
 import org.openqa.selenium.By
 
  
-EzAction ez = new EzAction()  
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), ['newSessionConnect': true], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Local/OL_125 View WAN list'), null, FailureHandling.STOP_ON_FAILURE)
 
 
+EzAction ez = new EzAction() 
 // Check số lượng WAN
 TestObject wanList = findTestObject('Object Repository/ONT/Network config/WAN config/wanList')  
 int wanNumber = (Mobile.getAttribute(wanList, 'contentDescription', 5)).substring(16, 17) as int 
@@ -44,20 +46,16 @@ if(wanNumber == 8) {
 
 // Set data & Save
 ez.tapFriendByText('Danh sách WAN', 1)
-Mobile.delay(5) 
-Mobile.tap(findTestObject('Object Repository/ONT/Network config/WAN config/combobox_wanType'), 0)  
+Mobile.delay(5)  
+ez.tapFriendByText('WAN Index', 2)
 ez.tapElementByText('IPoE Dynamic')
-def vlanID = findTestObject('Object Repository/ONT/Network config/WAN config/input_VlanID')
-Mobile.tap(vlanID, 0) 
-Mobile.setText(vlanID, '200', 0)
-Mobile.hideKeyboard()
-def v8021p = findTestObject('Object Repository/ONT/Network config/WAN config/input_8021p')
-Mobile.tap(v8021p, 0)
-Mobile.setText(v8021p, '5', 0)
+ez.setTextFriendByText('WAN Index', '20' + wanNumber, 5)
+ez.setTextFriendByText('WAN Index', '2', 7) 
 ez.tapElementByText('Lưu')
 
 
 // Verify msg 
 Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Network config/Message/msg_configSuccess_local'), 120)
 ez.tapElementByText('Xác nhận')
-Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Connect device/input_serialNumber'), 10)
+Mobile.verifyElementExist(findTestObject('Object Repository/Login/img_setting'), 30) 
+Mobile.delay(60)

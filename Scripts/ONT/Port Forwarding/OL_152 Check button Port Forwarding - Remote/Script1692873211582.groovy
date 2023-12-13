@@ -42,9 +42,14 @@ for (int i=0; i< wans.size(); i++) {
 		wanName = wans.get(i).getAttribute('contentDescription').substring(0,12)
 		break
 	}
-} 
+}  
+
+int height95 = (Mobile.getDeviceHeight())*95/100
+int height5 = (Mobile.getDeviceHeight())*5/100 
+int width50 = (Mobile.getDeviceWidth())*50/100
+
 if (countPort == 0) {
-	Mobile.swipe(380, 2200, 380, 220)
+	Mobile.swipe(width50, height95, width50, height5)
 	wans = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
 	for (int i=0; i< wans.size(); i++) {
 		String buttonPort = wans.get(i).getAttribute('contentDescription')
@@ -56,7 +61,7 @@ if (countPort == 0) {
 	}
 }
 if (countPort == 0) {
-	Mobile.swipe(380, 2200, 380, 220)
+	Mobile.swipe(width50, height95, width50, height5)
 	wans = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
 	for (int i=0; i< wans.size(); i++) {
 		String buttonPort = wans.get(i).getAttribute('contentDescription')
@@ -89,7 +94,7 @@ if (countPort == 0) {
 		}
 	}
 	if (countPort == 0) {
-		Mobile.swipe(380, 2200, 380, 220)
+		Mobile.swipe(width50, height95, width50, height5)
 		wans = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
 		for (int i=0; i< wans.size(); i++) {
 			String buttonPort = wans.get(i).getAttribute('contentDescription')
@@ -101,7 +106,7 @@ if (countPort == 0) {
 		}
 	}
 	if (countPort == 0) {
-		Mobile.swipe(380, 2200, 380, 220)
+		Mobile.swipe(width50, height95, width50, height5)
 		wans = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
 		for (int i=0; i< wans.size(); i++) {
 			String buttonPort = wans.get(i).getAttribute('contentDescription')

@@ -25,41 +25,43 @@ import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement
 
+Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Remote/OL_125 View WAN list'), [:], FailureHandling.STOP_ON_FAILURE)
 
-EzAction ez = new EzAction()
-
-// Call case add PPPoE mới để sửa
-Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Remote/OL_126_1 Add WAN PPPoE'), null, FailureHandling.STOP_ON_FAILURE) 
-
-
-// Tìm WAN PPPoE đầu tiên để sửa
+EzAction ez = new EzAction() 
+// Tìm WAN PPPoE thứ 2 để sửa (trừ WAN 1)
 int countPage = 0
-Mobile.swipe(380, 220, 380, 2200)
-List<MobileElement> list1 = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]')) 
-for (int i=0; i< list1.size(); i++) {
+String wanIndex
+int height90 = (Mobile.getDeviceHeight())*90/100
+int height20 = (Mobile.getDeviceHeight())*20/100
+int width50 = (Mobile.getDeviceWidth())*50/100
+Mobile.swipe(width50, height20, width50, height90)
+List<MobileElement> list1 = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
+for (int i=2; i< list1.size(); i++) {
 	List<MobileElement> wPPPoE = list1.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'PPPoE' or . = 'PPPoE') and @resource-id = '']"))
 	if (wPPPoE.size() != 0) {
+		countPage = 1
+		wanIndex = list1.get(i).getAttribute('contentDescription').substring(11,12)
 		list1.get(i).click()
-		countPage = 1 
 		break
-	 }
+	}
 }
 if (!countPage) {
-	Mobile.swipe(380, 2200, 380, 220)
+	Mobile.swipe(width50, height90, width50, height20)
 	List<MobileElement> list2 = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
 	for (int i=0; i< list2.size(); i++) {
 		List<MobileElement> wPPPoE = list2.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'PPPoE' or . = 'PPPoE') and @resource-id = '']"))
 		if (wPPPoE.size() != 0) {
+			countPage = 2
+			wanIndex = list2.get(i).getAttribute('contentDescription').substring(11,12)
 			list2.get(i).click()
-			countPage = 2 
 			break
-		 }
+		}
 	}
 }
 println(countPage) 
 
 
-// Sửa vlanID 
+// Sửa vlanID
 MobileElement vlanID = ez.find('WAN Index', 5)
 def oldVlan = vlanID.getText() as int
 println(oldVlan)
@@ -75,40 +77,32 @@ Mobile.hideKeyboard()
 ez.tapElementByText('Lưu') 
 
 
-// Verify msg 
-Mobile.verifyElementExist(ez.createTestObjectFromText('Lưu thành công!'), 120)  
+// Verify msg
+Mobile.verifyElementExist(ez.createTestObjectFromText('Lưu thành công!'), 120)
 ez.tapElementByText('Xác nhận')
-Mobile.waitForElementPresent(ez.createTestObjectFromText('Danh sách WAN'), 10)
+Mobile.waitForElementPresent(ez.createTestObjectFromText('Danh sách WAN'), 30)
+
+
+// Load lại data
+Mobile.delay(60)
+ez.tapFriendByText('Danh sách WAN', -1)
+ez.tapElementByText('Cấu hình WAN')
 
 
 // Kiểm tra lại giá trị sau chỉnh sửa
 switch(countPage) {
 	case 1:
-	Mobile.swipe(380, 220, 380, 2200)
-	List<MobileElement> list1Edit = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]')) 
-	for (int i=0; i< list1Edit.size(); i++) {
-		List<MobileElement> wPPPoE = list1Edit.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'PPPoE' or . = 'PPPoE') and @resource-id = '']"))
-		if (wPPPoE.size() != 0) {
-			 list1Edit.get(i).click() 
-			 break
-		 }
-	 }
-	 break
-	 case 2:
-	 Mobile.swipe(380, 2200, 380, 220)
-	 List<MobileElement> list2Edit = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
-	 for (int i=0; i< list2Edit.size(); i++) {
-		 List<MobileElement> wPPPoE = list2Edit.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'PPPoE' or . = 'PPPoE') and @resource-id = '']"))
-		 if (wPPPoE.size() != 0) {
-			 list2Edit.get(i).click()
-			 break
-		  }
-	 }
-	 break
-}  
+	Mobile.swipe(width50, height20, width50, height90)
+	ez.findContainsAndTapOffset("WAN Index: " + wanIndex, 0, 0)
+	break
+	case 2:
+	Mobile.swipe(width50, height90, width50, height20)
+	ez.findContainsAndTapOffset("WAN Index: " + wanIndex, 0, 0)
+	break
+}
+ 
 vlanID = ez.find('WAN Index', 5)
-def editVlan = vlanID.getText() as int 
+def editVlan = vlanID.getText() as int
 assert editVlan == newVlan
 
-
-
+ez.tapFriendByText('Chi tiết WAN', -1)

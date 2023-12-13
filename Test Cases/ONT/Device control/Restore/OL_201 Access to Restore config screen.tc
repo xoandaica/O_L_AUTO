@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_201 Access to Restore config screen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f91c4116-f17e-45b0-92a5-ccc84fddf169</testCaseGuid>
+</TestCaseEntity>

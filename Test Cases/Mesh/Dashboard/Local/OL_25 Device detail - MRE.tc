@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_25 Device detail - MRE</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d87cde80-d8cf-4f96-bc98-af316c6d00b5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6a5ef148-e2e3-4ac7-af09-d5edf9a41095</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'true'</defaultValue>
+      <description></description>
+      <id>6a5ef148-e2e3-4ac7-af09-d5edf9a41095</id>
+      <masked>false</masked>
+      <name>newSessionDetail</name>
+   </variable>
+</TestCaseEntity>

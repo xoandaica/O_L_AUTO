@@ -41,7 +41,7 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import base.EzAction
 
 class Commonv {
-	
+
 	/**
 	 * Gọi hàm này để tự động login khi mở app
 	 */
@@ -51,9 +51,9 @@ class Commonv {
 		EzAction ez = new EzAction()
 		String txt_hello = 'Xin chào\n' + GlobalVariable.username
 		TestObject hello = ez.createTestObject('//*[contains(@content-desc, "' + txt_hello + '")]')
-		
+
 		if (!Mobile.verifyElementVisible(hello, 5, FailureHandling.OPTIONAL)) {
-			WebUI.callTestCase(findTestCase('Login success'), [('newSession') : 'false'], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('User/OL_02 Login success'), [('newSession') : 'false'], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
@@ -66,9 +66,9 @@ class Commonv {
 		EzAction ez = new EzAction()
 		String txt_hello = 'Xin chào\n' + GlobalVariable.username
 		TestObject hello = ez.createTestObject('//*[contains(@content-desc, "' + txt_hello + '")]')
-		
+
 		if (Mobile.verifyElementVisible(hello, 5, FailureHandling.OPTIONAL)) {
-			WebUI.callTestCase(findTestCase('Logout success'), null, FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('User/OL_08 Logout success'), null, FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 }

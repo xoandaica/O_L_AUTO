@@ -15,7 +15,7 @@
       <guid>06a02b58-b43c-4d50-b141-a16dc6793c87</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login success</testCaseId>
+      <testCaseId>Test Cases/User/OL_02 Login success</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -40,7 +40,7 @@
       <guid>d3edb9b6-2689-4810-858b-848c86366b43</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Logout success</testCaseId>
+      <testCaseId>Test Cases/User/OL_08 Logout success</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -53,14 +53,14 @@
       <guid>160b468f-1e58-42d0-8964-642b68ab0673</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Forgot password</testCaseId>
+      <testCaseId>Test Cases/User/OL_16 Forgot password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a4374c11-af8b-4e53-abf9-256d214008cf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Change password</testCaseId>
+      <testCaseId>Test Cases/User/OL_12 Change password</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

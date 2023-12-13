@@ -51,6 +51,7 @@ String newName = ONTserial + 'Main2.4G' + Randomv.getHexStringFromTimestamp().su
 Mobile.tap(findTestObject('Object Repository/ONT/Network config/Wifi config/ssidName'), 0) 
 Mobile.setText(findTestObject('Object Repository/ONT/Network config/Wifi config/ssidName'), newName, 5) 
 ez.tapElementByText('Lưu')
+Mobile.delay(20)
 ez.findContains('Lưu thành công', 0) 
 ez.tapElementByText('Xác nhận')
 

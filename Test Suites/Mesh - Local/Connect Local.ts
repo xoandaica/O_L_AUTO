@@ -15,7 +15,7 @@
       <guid>ca96b788-7682-4b40-85e5-c31cd834e558</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Mesh Config/Connect device/Connect wifi</testCaseId>
+      <testCaseId>Test Cases/Mesh/Connect device/Connect wifi</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -34,7 +34,7 @@
       <guid>bab91911-15ec-468f-aed6-21c385f06a23</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Mesh Config/Connect device/OL_20 Verify connect Local success</testCaseId>
+      <testCaseId>Test Cases/Mesh/Connect device/OL_20 Verify connect Local success</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

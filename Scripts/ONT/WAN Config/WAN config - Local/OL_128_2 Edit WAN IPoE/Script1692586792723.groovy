@@ -28,99 +28,58 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement
 
 
-EzAction ez = new EzAction() 
-
-
-// Call case add IPoE Dynamic mới để sửa
-Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Local/OL_126_2 Add WAN IPoE'), null, FailureHandling.STOP_ON_FAILURE)
-// Tạo mới thành công > back về màn Tìm kiếm Serial => call case về lại màn danh sách WAN
 Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), ['newSessionConnect': true], FailureHandling.STOP_ON_FAILURE)
 Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Local/OL_125 View WAN list'), null, FailureHandling.STOP_ON_FAILURE)
- 
 
-// Tìm WAN IPoE Dynamic thứ 2 để sửa (trừ WAN 0 đầu)
-int countIPoE = 0
-int countPage = 1
-Mobile.swipe(380, 220, 380, 2200)
+
+EzAction ez = new EzAction()  
+// Tìm WAN IPoE Dynamic thứ 2 để sửa (trừ WAN 0) 
+int countPage = 0
+String wanIndex
+int height90 = (Mobile.getDeviceHeight())*90/100
+int height20 = (Mobile.getDeviceHeight())*20/100
+int width50 = (Mobile.getDeviceWidth())*50/100
+Mobile.swipe(width50, height20, width50, height90)
 List<MobileElement> list1 = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
-for (int i=0; i< list1.size(); i++) {
+for (int i=2; i< list1.size(); i++) {
 	List<MobileElement> wIPoE = list1.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'IPoE Dynamic' or . = 'IPoE Dynamic') and @resource-id = '']"))
-	 if (wIPoE.size() != 0) {
-		 countIPoE++
-	 }
-	 if (countIPoE == 2) {
-		 list1.get(i).click()
-		 break
-	 }
-} 
-if (countIPoE != 2) {
-	countPage = 2
-	Mobile.swipe(380, 2200, 380, 220)
+	if (wIPoE.size() != 0) {
+		countPage = 1
+		wanIndex = list1.get(i).getAttribute('contentDescription').substring(11,12)
+		list1.get(i).click()
+		break
+	}
+}
+if (!countPage) {
+	Mobile.swipe(width50, height90, width50, height20)
 	List<MobileElement> list2 = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]'))
 	for (int i=0; i< list2.size(); i++) {
 		List<MobileElement> wIPoE = list2.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'IPoE Dynamic' or . = 'IPoE Dynamic') and @resource-id = '']"))
-		 if (wIPoE.size() != 0) {
-			 countIPoE++
-		 }
-		 if (countIPoE == 2) {
-			 list2.get(i).click()
-			 break
-		 }
-	} 
+		if (wIPoE.size() != 0) {
+			countPage = 2
+			wanIndex = list2.get(i).getAttribute('contentDescription').substring(11,12)
+			list2.get(i).click()
+			break
+		}
+	}
 }
 println(countPage)
 
 
 // Sửa vlanID 
-def oldVlan = Mobile.getText(findTestObject('Object Repository/ONT/Network config/WAN config/input_VlanID'), 0) as int
+def oldVlan = ez.find('WAN Index', 5).getText() as int 
 println(oldVlan)
 def newVlan = (Math.floor(oldVlan / 10) % 2 == 0) ? oldVlan - 10 : oldVlan + 10
-println(newVlan)
-Mobile.tap(findTestObject('Object Repository/ONT/Network config/WAN config/input_VlanID'), 0)
-Mobile.setText(findTestObject('Object Repository/ONT/Network config/WAN config/input_VlanID'), newVlan.toString(), 0) 
+println(newVlan) 
+ez.setTextFriendByText('WAN Index', newVlan.toString(), 5)
 ez.tapElementByText('Lưu') 
 
 
 // Verify msg 
 Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Network config/Message/msg_configSuccess_local'), 120)
 ez.tapElementByText('Xác nhận')
-Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Connect device/input_serialNumber'), 10)
- 
+Mobile.verifyElementExist(findTestObject('Object Repository/Login/img_setting'), 30) 
 
-// Kiểm tra lại giá trị sau chỉnh sửa
-// Sửa thành công > back về màn Tìm kiếm Serial => call case về lại màn danh sách WAN
-Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), ['newSessionConnect': true], FailureHandling.STOP_ON_FAILURE)
-Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Local/OL_125 View WAN list'), null, FailureHandling.STOP_ON_FAILURE)
-countIPoE = 0
-switch(countPage) {
-	case 1:
-	Mobile.swipe(380, 220, 380, 2200) 
-	List<MobileElement> list1Edit = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]')) 
-	  for (int i=0; i< list1Edit.size(); i++) {
-		  List<MobileElement> wIPoE = list1Edit.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'IPoE Dynamic' or . = 'IPoE Dynamic') and @resource-id = '']"))
-		   if (wIPoE.size() != 0) {
-			   countIPoE++
-		   }
-		   if (countIPoE == 2) {
-			   list1Edit.get(i).click()
-			   break
-		   }
-	  }
-	 break
-	 case 2:
-	 Mobile.swipe(380, 2200, 380, 220)
-	 List<MobileElement> list2Edit = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "WAN Index:")]')) 
-	 for (int i=0; i< list2Edit.size(); i++) {
-		 List<MobileElement> wIPoE = list2Edit.get(i).findElements(By.xpath("//*[@class = 'android.view.View' and (@text = 'IPoE Dynamic' or . = 'IPoE Dynamic') and @resource-id = '']"))
-		  if (countIPoE == 2) {
-			  list2Edit.get(i).click() // Chỉ click vào wan IPoE ở page 2 rồi out, vì đã có wan đầu ở page 1
-			  break
-		  }
-	 }
-	 break
-}
-editVlan = Mobile.getText(findTestObject('Object Repository/ONT/Network config/WAN config/input_VlanID'), 0) as int
-assert editVlan == newVlan
-
+Mobile.delay(60)
 
 

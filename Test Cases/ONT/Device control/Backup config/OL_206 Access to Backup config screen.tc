@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OL_206 Access to Backup config screen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0e086f6-4a52-4e89-b581-dd3381b8edda</testCaseGuid>
+</TestCaseEntity>

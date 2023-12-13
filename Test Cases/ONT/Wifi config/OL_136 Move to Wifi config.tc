@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Kiểm tra di chuyển đến màn hình cấu hình Mesh</description>
+   <description>Kiểm tra di chuyển đến màn hình cấu hình Wifi</description>
    <name>OL_136 Move to Wifi config</name>
    <tag></tag>
    <comment></comment>

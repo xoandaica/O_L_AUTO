@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>testcase tái sử dụng cho việc tìm và đi vào cấu hình thiết bị</description>
+   <name>OL_32 Add WAN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e514d96b-0357-42cd-ac95-76db1c0a2031</testCaseGuid>
+</TestCaseEntity>

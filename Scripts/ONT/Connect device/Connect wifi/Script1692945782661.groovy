@@ -17,27 +17,56 @@ import com.kms.katalon.core.testobject.TestObject
 import io.appium.java_client.android.AndroidElement
 
 Mobile.startExistingApplication('com.android.settings')
-
+ 
 EzAction ez = new EzAction()
-ez.tapElementByText('Kết nối')
-ez.tapElementByText('Wi-Fi') 
 
-Mobile.delay(10)
-String ONTwifi = GlobalVariable.ONTwifi
-String ONTpath = "//*[@text='" + ONTwifi + "']"
-MobileElement wifi_name = MobileDriverFactory.driver.findElement(By.xpath(ONTpath)) 
-if (wifi_name.isDisplayed() == true) { 
-	wifi_name.click() 
+TestObject ket_noi = ez.createTestObjectFromText('Kết nối')
+if(Mobile.verifyElementExist(ket_noi, 10, FailureHandling.OPTIONAL)) {
+	Mobile.tap(ket_noi, 5)
 }
 else {
-	Mobile.swipe(380, 2200, 380, 220)
-	wifi_name = ez.driver.findElement(By.xpath(ONTpath))
-	while(wifi_name.isDisplayed() == false) {
-	    Mobile.swipe(380, 2200, 380, 220)
-	    wifi_name = ez.driver.findElement(By.xpath(ONTpath))
-	}
-	wifi_name.click()
+	TestObject connect = ez.createTestObjectFromText('Connect') 
+	Mobile.tap(connect, 5)
 }
 
-Mobile.closeApplication()
+String wifi_nameLocal = "$wifi_nameLocal"
+String wifi_passLocal = "$wifi_passLocal"
+ 
+if(Mobile.verifyElementExist(ez.createTestObjectFromText(wifi_nameLocal), 10, FailureHandling.OPTIONAL)) {
+	Mobile.closeApplication()
+}
 
+else {
+	ez.tapElementByText('Wi-Fi')
+	Mobile.delay(10)
+	
+	// Tìm wifi đúng để connect 
+	if(Mobile.verifyElementExist(ez.createTestObjectFromText(wifi_nameLocal), 10, FailureHandling.OPTIONAL)) {
+		ez.tapElementByText(wifi_nameLocal)
+	}
+	else {
+		int height = Mobile.getDeviceHeight()
+		int height90 = height*90/100
+		int height50 = height*50/100
+		int width = Mobile.getDeviceWidth()
+		int width50 = width*50/100
+		Mobile.swipe(width50, height90, width50, height50) 
+		Mobile.delay(3)  
+		while ((Mobile.verifyElementExist(ez.createTestObjectFromText(wifi_nameLocal), 10, FailureHandling.OPTIONAL)) == false) {
+			Mobile.swipe(width50, height90, width50, height50)  
+			Mobile.delay(3)
+		}
+		ez.tapElementByText(wifi_nameLocal)
+	}
+	
+	// Nhập password (nếu có)
+	Mobile.delay(10)
+	TestObject tbx_Password = findTestObject('Object Repository/Mesh/Connect device/Connect local/tbx_Password')
+	if(Mobile.verifyElementExist(tbx_Password, 10, FailureHandling.OPTIONAL)) {
+		Mobile.tap(tbx_Password, 5)
+		Mobile.setText(tbx_Password, wifi_passLocal, 5)
+		ez.tapElementByText('Kết nối')
+	}
+	
+	Mobile.closeApplication()
+}

@@ -23,9 +23,11 @@ import base.EzAction
 import org.openqa.selenium.By
 
 
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_20 Connect ONT Local'), ['newSessionConnect': true], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Local/OL_125 View WAN list'), null, FailureHandling.STOP_ON_FAILURE)
+
+
 EzAction ez = new EzAction() 
-
-
 // Check số lượng WAN
 TestObject wanList = findTestObject('Object Repository/ONT/Network config/WAN config/wanList')  
 int wanNumber = (Mobile.getAttribute(wanList, 'contentDescription', 5)).substring(16, 17) as int 
@@ -44,7 +46,7 @@ if(wanNumber == 8) {
 // Set data & Save
 ez.tapFriendByText('Danh sách WAN', 1)
 Mobile.delay(5)  
-ez.setTextFriendByText('WAN Index', '100', 5) 
+ez.setTextFriendByText('WAN Index', '100' + wanNumber, 5) 
 ez.setTextFriendByText('WAN Index', '4', 7) 
 MobileElement info = ez.findContains('Username')
 List<MobileElement> infoBlock = info.findElements(By.xpath("//*[@class = 'android.widget.EditText' and @resource-id = '' and (@text = '' or . = '')]"))
@@ -60,4 +62,5 @@ ez.tapElementByText('Lưu')
 // Verify msg 
 Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Network config/Message/msg_configSuccess_local'), 120)
 ez.tapElementByText('Xác nhận')
-Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Connect device/input_serialNumber'), 10)
+Mobile.verifyElementExist(findTestObject('Object Repository/Login/img_setting'), 30) 
+Mobile.delay(60)

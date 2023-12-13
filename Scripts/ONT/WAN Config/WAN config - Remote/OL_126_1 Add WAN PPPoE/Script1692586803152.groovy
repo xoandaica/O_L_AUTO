@@ -17,14 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 import io.appium.java_client.MobileElement
 import io.appium.java_client.android.AndroidElement
+import one.telco.Commonv
 
 import org.openqa.selenium.Keys as Keys
 import base.EzAction 
 import org.openqa.selenium.By
 
 
-EzAction ez = new EzAction() 
-
+Mobile.callTestCase(findTestCase('Test Cases/ONT/WAN Config/WAN config - Remote/OL_125 View WAN list'), [:], FailureHandling.STOP_ON_FAILURE) 
 
 // Check số lượng WAN
 TestObject wanList = findTestObject('Object Repository/ONT/Network config/WAN config/wanList')  
@@ -39,9 +39,10 @@ if(wanNumber == 8) {
 
 
 // Set data & Save
+EzAction ez = new EzAction()
 ez.tapFriendByText('Danh sách WAN', 1)
 Mobile.delay(5)  
-ez.setTextFriendByText('WAN Index', '1000', 5) 
+ez.setTextFriendByText('WAN Index', '10' + wanNumber, 5) 
 ez.setTextFriendByText('WAN Index', '1', 7)  
 MobileElement info = ez.findContains('Username')
 List<MobileElement> infoBlock = info.findElements(By.xpath("//*[@class = 'android.widget.EditText' and @resource-id = '' and (@text = '' or . = '')]"))
@@ -58,3 +59,7 @@ ez.tapElementByText('Lưu')
 Mobile.verifyElementExist(ez.createTestObjectFromText('Lưu thành công!'), 120)  
 ez.tapElementByText('Xác nhận')
 Mobile.waitForElementPresent(ez.createTestObjectFromText('Danh sách WAN'), 30)
+
+
+// Load lại data
+Mobile.delay(60) 

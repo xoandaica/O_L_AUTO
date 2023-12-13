@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Wifi Main config - Remote</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>a32d0ed0-f2a2-46c8-b126-6cef4b920d43</testSuiteGuid>
+   <testCaseLink>
+      <guid>cb688c50-dc9b-4f13-90c7-2beb2de0cb58</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Connect device/OL_21 Verify connect Remote success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>249122a2-e694-46c9-9a17-04fa7120d097</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>54b16b6e-0aaa-4bdd-a5b8-e8151750e320</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6411e3a6-6f0c-4afd-a708-168ae6d1d6b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Wifi config/OL_41 Move to Wifi List</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cdf7c595-2c93-4ccb-ad67-e49dffa07eaf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Wifi config/OL_42 Config wifi SSID main - Local</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aa0cc218-363c-4c5b-83a9-596b393f0eab</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7dce50f7-7aee-43f1-b810-1cc16b3a0a50</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

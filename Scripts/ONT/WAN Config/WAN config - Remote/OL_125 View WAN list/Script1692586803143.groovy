@@ -23,7 +23,9 @@ import one.telco.Commonv
 
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
+ 
 
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_21 Connect ONT Remote'), [:], FailureHandling.STOP_ON_FAILURE) 
 
 EzAction ez = new EzAction()
 Mobile.delay(5)

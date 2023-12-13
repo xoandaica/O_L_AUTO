@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>testcase tái sử dụng cho việc tìm và đi vào cấu hình thiết bị</description>
+   <name>OL_32 Add WAN PPPoE</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbf922f1-b3ac-47d5-a143-2f16606a46ea</testCaseGuid>
+</TestCaseEntity>

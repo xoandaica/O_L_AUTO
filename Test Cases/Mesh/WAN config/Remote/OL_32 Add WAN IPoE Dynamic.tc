@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>testcase tái sử dụng cho việc tìm và đi vào cấu hình thiết bị</description>
+   <name>OL_32 Add WAN IPoE Dynamic</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efb75e14-cde8-462f-8450-728567950d19</testCaseGuid>
+</TestCaseEntity>

@@ -24,12 +24,10 @@ import one.telco.Commonv
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
 
-
 EzAction ez = new EzAction()
 Mobile.delay(5)
 ez.findContains('Cài đặt', 0).click()
 ez.tapElementByText('Cấu hình Mạng')
 ez.tapElementByText('Cấu hình LAN')
-
 
 Mobile.waitForElementPresent(ez.createTestObjectFromText('Cấu hình LAN'), 30)

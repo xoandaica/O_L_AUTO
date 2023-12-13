@@ -39,26 +39,30 @@ ez.tapElementByText('Quét thiết bị')
 ez.tapElementByText('Đã kết nối')  
 Mobile.waitForElementPresent(findTestObject('Object Repository/ONT/Connect device/btnKetnoi'), 180)
 Mobile.delay(3)
-Mobile.tap(findTestObject('Object Repository/ONT/Connect device/btnKetnoi'), 0)
+Mobile.tap(findTestObject('Object Repository/ONT/Connect device/btnKetnoi'), 0) 
 
 
-// Nếu hiển thị màn hình Nhập mật khẩu quản trị  
-TestObject passGUI = findTestObject('Object Repository/ONT/Connect device/nhapPass')
-if(Mobile.verifyElementExist(passGUI, 10, FailureHandling.OPTIONAL)) {
-	ez.setTextFriendByText('Kết nối thiết bị', GlobalVariable.passGUI, 3)
-	ez.tapElementByText('Kết nối')
-//	Mobile.setText(findTestObject('Object Repository/ONT/Connect device/input_passGUI'), GlobalVariable.passGUI, 0)
-//	Mobile.tap(findTestObject('Object Repository/ONT/Connect device/btnKetnoi'), 0)
+//Thiết bị không có onl token => Yêu cầu nhập mật khẩu tài khoản quản trị
+TestObject title_inputAdminPass = findTestObject('Object Repository/Mesh/Connect device/Connect local/titlePopup_input_AdminPass')
+if(Mobile.verifyElementExist(title_inputAdminPass, 5, FailureHandling.OPTIONAL)) {
+	TestObject tbx_AdminPass = findTestObject('Object Repository/Mesh/Connect device/Connect local/tbx_AdminPass')
+	TestObject btn_connect_AdminPass = findTestObject('Object Repository/Mesh/Connect device/Connect local/btn_connect_AdminPass')
+	
+	Mobile.tap(tbx_AdminPass, 30)
+	Mobile.setText(tbx_AdminPass, GlobalVariable.passGUI, 30)
+	Mobile.tap(btn_connect_AdminPass, 30)
 }
 
 
 //Skip tutorial
 TestObject skipBtn = findTestObject('Object Repository/ONT/Connect device/btn_Skip')
-if(Mobile.verifyElementExist(skipBtn, 10, FailureHandling.OPTIONAL)) {
+if(Mobile.verifyElementExist(skipBtn, 5, FailureHandling.OPTIONAL)) {
 	Mobile.tap(skipBtn, 0)
 }
 
 
 // Kiểm tra đã vào được màn Dashboard
-Mobile.verifyElementExist(findTestObject('Object Repository/ONT/Dashboard/wifi2.4G'), 30) 
-
+ez = new EzAction()
+String model = GlobalVariable.ONTModel
+ez.find(model, 0) 
+return GlobalVariable.connectMode = 'local'

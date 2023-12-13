@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Wifi Main config - Local</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>e3154e2e-19d8-487d-ac45-cab0cdc7051c</testSuiteGuid>
+   <testCaseLink>
+      <guid>eb574165-82da-447d-88e4-a92822e1b2e8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Connect device/Connect wifi</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2f101926-5c8a-4cdf-9938-dc42acf88c5f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae6b556b-d479-4bd6-b98d-11a87885c36a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>46379d11-e49e-43b4-af08-1a3a1e2e471b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Connect device/OL_20 Verify connect Local success</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>516ecea5-1c48-4b9e-b198-0d11469f2198</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b40d849b-0dde-41c4-b4fb-6832900c22eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Wifi config/OL_41 Move to Wifi List</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dc254727-3f10-4f1c-bb9c-a4835bc11b03</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mesh/Wifi config/OL_42 Config wifi SSID main - Local</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aa0cc218-363c-4c5b-83a9-596b393f0eab</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7dce50f7-7aee-43f1-b810-1cc16b3a0a50</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

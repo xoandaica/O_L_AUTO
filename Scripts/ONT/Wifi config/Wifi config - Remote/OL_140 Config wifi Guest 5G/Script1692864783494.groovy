@@ -18,10 +18,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import base.EzAction
 import internal.GlobalVariable
 import io.appium.java_client.MobileElement
+import one.telco.Commonv
 import one.telco.Randomv
 
 import org.openqa.selenium.Keys as Keys
+ 
 
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Connect device/OL_21 Connect ONT Remote'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Test Cases/ONT/Wifi config/OL_136 Move to Wifi config'), [:], FailureHandling.STOP_ON_FAILURE)
 
 EzAction ez = new EzAction()
 // Click WiFi Guest 5G index 5
@@ -57,4 +61,6 @@ ez.tapElementByText('Xác nhận')
 
 // Call lại case config để kiểm tra giá trị SSID name đã thay đổi chưa
 Mobile.waitForElementPresent(ez.createTestObjectFromText('Danh sách WiFi'), 30)
+Mobile.delay(60) 
 Mobile.callTestCase(findTestCase('Test Cases/ONT/Wifi config/Wifi config - Remote/OL_140 Config wifi Guest 5G'), [('earlyAssert') : 'true', ('ssidNameAssert') : newName], FailureHandling.STOP_ON_FAILURE)
+ 

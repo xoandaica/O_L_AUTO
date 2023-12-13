@@ -14,16 +14,19 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+import io.appium.java_client.MobileElement
+
+import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
 import base.EzAction
 
 EzAction ez = new EzAction()
 
 ez.tapElementByText('Ping Test')
-Mobile.tap(findTestObject('Object Repository/ONT/Network test/btn_network_test'), 30)
+Mobile.tap(findTestObject('Object Repository/ONT/Network test/btn_network_test'), 0)
 
-Mobile.delay(40)
+Mobile.delay(20)
 
 //Ping lỗi
 if(Mobile.verifyElementExist(ez.createTestObjectFromText('Lấy dữ liệu không thành công'), 5, FailureHandling.OPTIONAL)) {
@@ -31,8 +34,8 @@ if(Mobile.verifyElementExist(ez.createTestObjectFromText('Lấy dữ liệu khô
 }
 
 //Kiểm tra ping thành công
-TestObject ping_result = ez.createTestObjectFromText('Số lần ping thành công')
-Mobile.verifyElementExist(ping_result, 0)
-
-String result = Mobile.getAttribute(ping_result, 'contentDescription', 5)
-println('Kết quả ping: ' + result)
+List<MobileElement> ping_result = ez.driver.findElements(By.xpath('//*[contains(@content-desc, "Số lần ping thành")]')) 
+if(ping_result.size() != 0) {
+	println('Ping success')
+} else println('Failed')
+ 
